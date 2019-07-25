@@ -1,0 +1,1 @@
+<span class="text-success mdi mdi-check-circle" data-toggle="tooltip" data-aligment="top" title="Disponible"></span>

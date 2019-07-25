@@ -1,0 +1,25 @@
+/* 
+    Created on : 15-sep-2018, 16:09:37
+    Author     : Juan T. Salmerón
+*/
+html,body{
+    padding:0px;
+    margin:0px;
+    border:none;
+    width:100%;
+    height:100%;
+}
+body {
+    background:#4c4c4c url(/img/login/bg-blur.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+form {
+    background-color:rgba(255,255,255,.95);
+    padding:20px;
+    border-radius: 10px;
+    border:solid 2px #dedede;
+    max-width:400px;
+    margin:auto;
+    box-shadow: #000000 0px 0px 200px;
+}
