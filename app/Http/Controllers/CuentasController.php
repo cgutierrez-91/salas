@@ -107,7 +107,8 @@ class CuentasController extends Controller
                 'email'     => $email,
                 'salt'      => $salt,
                 'nombre'    => $nombre,
-                'clave'     => $clave_hash
+                'clave'     => $clave_hash,
+                'nivel'     => 'usuario'
             ];
             
             $nuevo_id = DB::table('cuentas')->insertGetId($datos_insert);
