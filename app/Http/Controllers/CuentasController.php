@@ -104,10 +104,10 @@ class CuentasController extends Controller
             $clave_hash = sha1( sha1($clave) . $salt );
             $datos_insert = [
                 'usuario'   => $usuario,
-                'email'     => $email,
-                'salt'      => $salt,
-                'nombre'    => $nombre,
                 'clave'     => $clave_hash,
+                'salt'      => $salt,
+                'email'     => $email,
+                'nombre'    => $nombre,
                 'nivel'     => 'usuario'
             ];
             
