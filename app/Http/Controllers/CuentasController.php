@@ -58,6 +58,8 @@ class CuentasController extends Controller
         $clave = strip_tags( $request->input('clave') );
         $confirmar = strip_tags( $request->input('confirmar') );
         $nombre = trim(strip_tags( $request->input('nombre') ));
+        $nivel = trim(strip_tags( $request->input('nivel') )); //ojo
+
 
         $eu_params = ['x' => $usuario];
         $existe_usuario = Db::select('SELECT * FROM cuentas WHERE usuario=:x', $eu_params);
@@ -108,7 +110,7 @@ class CuentasController extends Controller
                 'salt'      => $salt,
                 'email'     => $email,
                 'nombre'    => $nombre,
-                'nivel'     => 'usuario'
+                'nivel'     => $nivel
             ];
             
             $nuevo_id = DB::table('cuentas')->insertGetId($datos_insert);
