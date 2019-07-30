@@ -112,10 +112,9 @@ class CuentasController extends Controller
                 'nombre'    => $nombre
             ];
             
-           $nuevo_id = DB::table('cuentas')->insertGetId($datos_insert);
-           //$nuevo_id = DB::insert('insert into cuentas (usuario, clave, salt, email, nombre, nivel value ('+ $usuario+','+$clave_hash+','+
-                                    //$salt+','+$email+','+$nombre+','+$nivel+')');
-            
+           //$nuevo_id = DB::table('cuentas')->insertGetId($datos_insert);
+           $nuevo_id = DB::table('cuentas')->insert($datos_insert);
+                       
             if ( $nuevo_id > 0 ) {
                 $mensaje = 'La cuenta fue creada satisfactoriamente.';
                 $vista = 'mensajes.ok';

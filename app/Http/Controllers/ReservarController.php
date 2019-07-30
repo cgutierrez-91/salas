@@ -177,7 +177,8 @@ class ReservarController extends Controller
             'observaciones' => ''
         ];
         
-        $id = DB::table('reservaciones')->insertGetId($params);
+        //$id = DB::table('reservaciones')->insertGetId($params);
+        $id = DB::table('reservaciones')->insert($params);
         
         if ( $id > 0 ) {
             
