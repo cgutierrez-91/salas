@@ -60,8 +60,6 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" 
                        class="form-control" placeholder="Nombre completo" />
-                <input type="hide" name="nivel" id="nivel" 
-                       value="usuario"  />
             </div>
         </div>
     </div>
